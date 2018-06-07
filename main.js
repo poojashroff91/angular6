@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var likeButton_1 = require("./likeButton");
+//let point = new Point(1, 2);
+// let x = point.x;
+// point.x = 10;
+//point.draw();
+var likeButton = new likeButton_1.LikeButton(23, false);
+likeButton.onClick();
+console.log("Likes : " + likeButton.likes + ", Selected: " + likeButton.isSelected);
+likeButton.onClick();
+console.log("Likes : " + likeButton.likes + ", Selected: " + likeButton.isSelected);
