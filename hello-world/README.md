@@ -35,6 +35,7 @@ cd my-app
 ng serve
 
 ## To create component
+
 1. Create component.
 2. Register component to module.
 
@@ -43,6 +44,7 @@ OR use cli
 ## To create service
 
 Logic for calling an HTTP service
+
 1. Tight coupling if you put this logic in component.ts
 2. Component should only have presentation logic.
 3. Multiple classes may use the http service.
