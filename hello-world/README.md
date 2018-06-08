@@ -62,3 +62,22 @@ Instruct angular to inject dependencies of the component into the component.
 **Services are added as Singleton classes in Angular Apps.**
 
 If services need dependencies on other services we need to use *@Injectable* decorator.
+
+## Property Binding
+
+If you're adding text between HTML tags - use string interpolation. 
+Otherwise, use the property binding syntax.
+Property binding works only one way.
+Changes in component reflect on DOM but not vice versa.
+
+There are properties in DOM which are not attributes of HTML and vice versa.
+For eg: colspan in `<td>` does not exist in DOM. Use `attr.` as a prefix.
+
+## Class binding
+
+If the condition evaluates to true, the class will be adde. Otherwise removed.
+Useful for active/inactive classes.
+
+## Style binding
+
+All available [Style Properties](https://www.w3schools.com/jsref/dom_obj_style.asp)

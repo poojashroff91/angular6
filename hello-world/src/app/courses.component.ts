@@ -11,11 +11,19 @@ import { CoursesService } from './courses.service';
                 {{ course }}
             </li>
         </ul>
+        <table>
+            <tr>
+                <td [attr.colspan] = "colSpan"></td>
+            </tr>
+        </table>
+        <button class="btn btn-primary" [class.active]="isActive" [style.backgroundColor] = "isActive ? 'blue' : 'white' ">Save</button>
     `
 })
 export class CoursesComponent {
 
     title = "List of courses";
+    colSpan = 2;
+    isActive = true;
     courses;
 
     constructor(service: CoursesService) {
