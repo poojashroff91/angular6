@@ -26,7 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
 ## To create ng app
 
 npm install -g @angular/cli
@@ -54,7 +53,7 @@ Services don't have Decorators like Component.
 
 ## Dependency injection
 
-1. Using new operator and creating instance of Service in constructor of Component causes tight coupling. 
+1. Using new operator and creating instance of Service in constructor of Component causes tight coupling.
 2. If we add parameters to Service constructor we end up with multiple changes in app code.
 
 To avoid above, change constructor of Component and add Service as a dependency (Parameter)
@@ -65,7 +64,7 @@ If services need dependencies on other services we need to use *@Injectable* dec
 
 ## Property Binding
 
-If you're adding text between HTML tags - use string interpolation. 
+If you're adding text between HTML tags - use string interpolation.
 Otherwise, use the property binding syntax.
 Property binding works only one way.
 Changes in component reflect on DOM but not vice versa.
@@ -80,4 +79,16 @@ Useful for active/inactive classes.
 
 ## Style binding
 
-All available [Style Properties](https://www.w3schools.com/jsref/dom_obj_style.asp)
+All available [Style Properties](https://www.w3schools.com/jsref/dom_obj_style.asp).
+
+## Event Binding
+
+When an event occurs on one element, the event bubbles all the way to the top element, unless there is a handler to ensure that the event is taken care of.
+
+## Two way binding
+
+How to reflect the changes in the DOM to the component.
+Error:
+Can't bind to 'ngModel' since it isn't a known property of 'input'.
+To solve:
+Import FormsModule in AppModule to use banana in a box `[(ngModel)]`

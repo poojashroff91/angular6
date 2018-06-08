@@ -16,7 +16,10 @@ import { CoursesService } from './courses.service';
                 <td [attr.colspan] = "colSpan"></td>
             </tr>
         </table>
-        <button class="btn btn-primary" [class.active]="isActive" [style.backgroundColor] = "isActive ? 'blue' : 'white' ">Save</button>
+        <div (click)="onDivClicked()">
+            <button class="btn btn-primary" [class.active]="isActive" [style.backgroundColor] = "isActive ? 'blue' : 'white' " (click)="onSave($event)" >Save</button>
+        </div>
+        <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
     `
 })
 export class CoursesComponent {
@@ -25,6 +28,21 @@ export class CoursesComponent {
     colSpan = 2;
     isActive = true;
     courses;
+    email = "me@example.com";
+
+    onSave($event) {
+        $event.stopPropagation();
+        console.log("Button was clicked", $event);
+    }
+
+    onDivClicked() {
+        console.log("Div was clicked");
+    }
+
+    onKeyUp(){
+        console.log('Enter was pressed');
+        console.log(this.email);
+    }
 
     constructor(service: CoursesService) {
         this.courses = service.getCourses();
