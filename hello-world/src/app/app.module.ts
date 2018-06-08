@@ -9,16 +9,21 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
 
+import { SummaryPipe } from './summary.pipe';
+import { FavoriteComponent } from './favorite/favorite.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     CourseComponent,
-    AuthorsComponent
+    AuthorsComponent,
+    SummaryPipe,
+    FavoriteComponent
   ],
   imports: [
-  BrowserModule,
+BrowserModule,
   FormsModule
   ],
   providers: [

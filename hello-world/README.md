@@ -92,3 +92,10 @@ Error:
 Can't bind to 'ngModel' since it isn't a known property of 'input'.
 To solve:
 Import FormsModule in AppModule to use banana in a box `[(ngModel)]`
+
+## Pipes
+
+Used for data formatting.
+
+## Bootstrap
+3.3 -> Glyphicons
