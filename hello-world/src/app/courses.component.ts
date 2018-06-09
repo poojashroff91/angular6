@@ -30,9 +30,7 @@ import { CoursesService } from './courses.service';
         <hr>
         {{ text | summary:10 }}
         <hr>
-        <span class="glyphicon" [class.glyphicon-star-empty]="!isFavorite" (click)="toggleFavorite()" ></span>
-        <span class="glyphicon" [class.glyphicon-star]="isFavorite"  (click)="toggleFavorite()"></span>
-
+        
 
     `
 })
@@ -43,7 +41,6 @@ export class CoursesComponent {
     isActive = true;
     courses;
     email = "me@example.com";
-    isFavorite = false;
 
     course = {
         title: "The Complete Angular Course",
@@ -74,9 +71,6 @@ export class CoursesComponent {
         console.log(this.email);
     }
 
-    toggleFavorite(){
-        this.isFavorite = !this.isFavorite;
-    }
 
     constructor(service: CoursesService) {
         this.courses = service.getCourses();

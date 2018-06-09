@@ -39,6 +39,7 @@ ng serve
 2. Register component to module.
 
 OR use cli
+Shortcut `ng g c component_name`
 
 ## To create service
 
@@ -50,6 +51,8 @@ Logic for calling an HTTP service
 
 Therefore we need services.
 Services don't have Decorators like Component.
+
+Shortcut `ng g s service_name`
 
 ## Dependency injection
 
@@ -96,6 +99,8 @@ Import FormsModule in AppModule to use banana in a box `[(ngModel)]`
 ## Pipes
 
 Used for data formatting.
+Shortcut `ng g p pipe_name`
 
 ## Bootstrap
+
 3.3 -> Glyphicons
