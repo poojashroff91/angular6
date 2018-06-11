@@ -128,3 +128,7 @@ A component is said to have an API if there are input and output properties.
 Last style added has maximum priority.
 Any styles in template will get precedence as per CSS rules.
 View encapsulation - It prevents the styles leaking to outer world (Shadow DOM in new browsers).
+
+## ng-container
+
+Use when you don't want any markup around the HTML components.

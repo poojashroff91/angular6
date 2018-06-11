@@ -5,10 +5,12 @@
 <!-- <favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite> -->
 <!-- <capital></capital> -->
 
-<bootstrap-panel>
-    <div class="heading">Heading</div>
+<!-- <bootstrap-panel>
+    <ng-container class="heading">Heading</ng-container>
     <div class="body">
         <h2>Body</h2>
         <p>Some text...</p>
     </div>
-</bootstrap-panel>
+</bootstrap-panel> -->
+
+<like [isActive]="tweet.isLiked" [likesCount] = "tweet.likesCount"></like>

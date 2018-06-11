@@ -14,6 +14,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { CapitalComponent } from './capital/capital.component';
 import { CapitalPipe } from './capital.pipe';
 import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PanelComponent } from './panel/panel.component';
     FavoriteComponent,
     CapitalComponent,
     CapitalPipe,
-    PanelComponent
+    PanelComponent,
+    LikeComponent
   ],
   imports: [
   BrowserModule,
