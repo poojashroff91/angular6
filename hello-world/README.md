@@ -118,3 +118,13 @@ A component is said to have an API if there are input and output properties.
 
 1. To allow hypenated variables in component html.
 2. To rename variables for refactoring purposes.
+
+## Templates
+
+1. Use when you have more than 5 lines of html in template.
+
+## Styles
+
+Last style added has maximum priority.
+Any styles in template will get precedence as per CSS rules.
+View encapsulation - It prevents the styles leaking to outer world (Shadow DOM in new browsers).
