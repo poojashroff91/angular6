@@ -104,3 +104,12 @@ Shortcut `ng g p pipe_name`
 ## Bootstrap
 
 3.3 -> Glyphicons
+
+## Component API
+
+A component is said to have an API if there are input and output properties.
+
+### Input
+
+1. Use @Input
+2. Use component metadata
