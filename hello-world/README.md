@@ -136,3 +136,7 @@ Use when you don't want any markup around the HTML components.
 ## Safe traversal
 
 Used when you are traversing complex objects and items maybe null.
+
+## Directive
+
+Shortcut `ng g d directive-name`

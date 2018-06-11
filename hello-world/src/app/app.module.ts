@@ -15,6 +15,7 @@ import { CapitalComponent } from './capital/capital.component';
 import { CapitalPipe } from './capital.pipe';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LikeComponent } from './like/like.component';
     CapitalComponent,
     CapitalPipe,
     PanelComponent,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective
   ],
   imports: [
   BrowserModule,
