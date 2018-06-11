@@ -132,3 +132,7 @@ View encapsulation - It prevents the styles leaking to outer world (Shadow DOM i
 ## ng-container
 
 Use when you don't want any markup around the HTML components.
+
+## Safe traversal
+
+Used when you are traversing complex objects and items maybe null.
