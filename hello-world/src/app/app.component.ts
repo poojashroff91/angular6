@@ -22,6 +22,7 @@ export class AppComponent {
     likesCount: 0
   }*/
 
-  courses = [1, 2];
+  // courses = [1, 2];
+  viewMode="map";
 
 }
