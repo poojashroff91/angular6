@@ -113,3 +113,8 @@ A component is said to have an API if there are input and output properties.
 
 1. Use @Input
 2. Use component metadata
+
+### Input alias
+
+1. To allow hypenated variables in component html.
+2. To rename variables for refactoring purposes.
