@@ -2,5 +2,5 @@
 <!-- <courses></courses> -->
 <!--<authors></authors>-->
 
-<favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChanged()"></favorite>
+<favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged($event)"></favorite>
 <!-- <capital></capital> -->
