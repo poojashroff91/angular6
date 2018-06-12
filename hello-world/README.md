@@ -140,3 +140,10 @@ Used when you are traversing complex objects and items maybe null.
 ## Directive
 
 Shortcut `ng g d directive-name`
+
+## Form control
+
+Two ways
+
+1. Directives - forms built this way is template driven. Simpler but less control.
+2. Code - forms built this way is reactive. Complex but more control.
