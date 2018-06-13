@@ -16,5 +16,10 @@ export class ContactFormComponent {
     console.log(f);
   }
 
+  contactMethods = [
+    { id: 1, name: 'Email'},
+    { id: 2, name: 'Phone'}
+  ];
+
 
 }
