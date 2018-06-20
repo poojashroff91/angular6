@@ -9,6 +9,8 @@ import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { AuthorsService } from './authors.service';
+import { PostService } from './services/post.service';
+
 
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
@@ -31,14 +33,13 @@ import { PostsComponent } from './posts/posts.component';
     PostsComponent
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule
   ],
   providers: [
-    CoursesService,
-    AuthorsService
+    PostService
   ],
   bootstrap: [AppComponent]
 })
