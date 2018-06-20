@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {PostService} from '../services/post.service';
+import { NotFoundError } from '../common/not-found-error';
+import { AppError } from '../common/app-error';
+import { BadInput } from '../common/bad-input';
 
 @Component({selector: 'posts', templateUrl: './posts.component.html', styleUrls: ['./posts.component.css']})
 export class PostsComponent implements OnInit {
@@ -26,9 +29,14 @@ export class PostsComponent implements OnInit {
             .splice(0, 0, post);
           console.log(response.json());
         }, 
-        error => {
-          alert('An unexpected error occured.');
-          console.log(error);
+        (error: AppError) => {  
+
+          if(error instanceof BadInput){
+            //this.form.setErrors(error.originalError);
+          } else {
+            alert('An unexpected error occured.');
+            console.log(error);
+          }       
         });
   }
 
@@ -58,9 +66,14 @@ export class PostsComponent implements OnInit {
         this
           .posts
           .splice(index, 1);
-      }, error => {
-        alert('An unexpected error occured.');
-        console.log(error);
+      }, (error : AppError) => {
+
+        if (error instanceof NotFoundError)
+          alert('This post has already been deleted.');
+        else {
+          alert('An unexpected error occured.');
+          console.log(error);
+        }
       });
 
   }
