@@ -28,14 +28,17 @@ import { PasswordFormComponent } from './password-form/password-form.component';
 import { PostsComponent } from './posts/posts.component';
 
 import { AppErrorHandler } from './common/app-error-handler';
-
+import { FollowerComponent } from './follower/follower.component';
+import { FollowerService } from './services/follower.service';
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    FollowerComponent
   ],
   imports: [
   
+
 BrowserModule,
     FormsModule,
     ReactiveFormsModule,
@@ -43,6 +46,7 @@ BrowserModule,
   ],
   providers: [
     PostService,
+    FollowerService,
     { provide: ErrorHandler, useClass: AppErrorHandler }
   ],
   bootstrap: [AppComponent]
